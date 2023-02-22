@@ -1,14 +1,9 @@
+package com.opp.polymorphism;
 
-public class test {
+public class Test {
 	public static void main(String[] args) {
-		singletonDesignPattern L1 = singletonDesignPattern.getIntance();
-		singletonDesignPattern L2 = singletonDesignPattern.getIntance();
-		
-		if(L1 == L2) {
-			System.out.println("equal");
-		}else {
-			System.out.println("not equal");
-		}
+		overridingChild o = new  overridingChild();
+		o.m1();
 	}
 
 }
