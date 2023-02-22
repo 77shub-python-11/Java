@@ -1,16 +1,20 @@
-package com.oppps.Encapsulation;
+package com.Opps.Constructor;
 
-public class Test {
+public class test {
+	int x, y;
+
+	// constructor
+	public test(int p, int q) {
+
+		x = p;
+		y = q;
+
+	}
+
 	public static void main(String[] args) {
-		Bank b1 = new Bank();
-		b1.setAccountNumber(123456);
-		
-		b1.setBalance(60000);
-		
-		b1.setBalance(90000);
-		b1.setBalance(30000000);
-		System.out.println(b1.getBalance());
-		System.out.println(b1.getAccountNumber());
+		test t = new test(2, 4);
+		System.out.println(t.x);
+		System.out.println(t.y);
 	}
 
 }
