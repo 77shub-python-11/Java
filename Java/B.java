@@ -1,26 +1,15 @@
-package com.oops.inheritances;
+package com.oppp.Abstract;
 
-public class B extends A {
-	public void m3() {
-		System.out.println("I am m3 ");
+public abstract class B extends Abstraction {
+	int a = 10;
+	
+	@Override
+	public void m1() {
+		System.out.println("Add some veggie ");
+		// TODO Auto-generated method stub
+		
+	}
+	
 
-	}
-	public void m4() {
-		System.out.println("I am m4 ");
-
-	}
-	public static void main(String[] args) {
-		B b = new B();
-		b.x = 45;
-		b.y = 30;
-		b.m1();
-		b.m2();
-		b.m3();
-		b.m4();
-		b.m6();
-		b.m7();
-		System.out.println(b.x);
-		System.out.println(b.y);
-	}
 
 }

@@ -1,40 +1,23 @@
-package com.oops.inheritances;
+package com.oppp.Abstract;
+/*
+ * child should implement all methods of parents compalusry in normal class 
+ * but in abstract class we can implement any methods and skip also 
+ */
 
-public class A {
-	public static void main(String[] args) {
-		A a = new A();
-		a.m5();
-	}
+public class A extends Abstraction{
 
-	A() {
-
-	}
-
-	// Single inheritances
-	int x, y;
-
-	void m7() {
-		System.out.println("I am m1 ");
-
-	}
-
-	private void m5() {
-		System.out.println("I am m5 ");
-
-	}
-
-	protected void m6() {
-		System.out.println("I am m6 ");
-
-	}
-
+	@Override
 	public void m1() {
-		System.out.println("I am m1 ");
-
+		System.out.println("Add some eggs in maggie");
+		
 	}
 
-	public void m2() {
-		System.out.println("i am m2 ");
+	@Override
+	public void prepareMaggie() {
+		// TODO Auto-generated method stub
+		System.out.println("Make simple maggie ");
+		
 	}
+	
 
 }
