@@ -1,17 +1,25 @@
-
 public class Sample {
-	public static void main(String[] args) {
-		System.out.println("Hello");
-		int rollno = 11;//primitive data are those data type which can not be farther divided into another data type 
-		char letter = 'r';
-		float marks = 98.3f;
-		double largedicimalno = 23321.1112223;
-		long longinteger = 222222222222222L;
-		boolean check = true;
-		byte roll = 20;
-		short ro = 2;
-		
-		
-	}
+	int x = 10;// instance var 
+	static int y = 20;// Static variable
 
+	static{
+		int p = 35;// local var 
+		Sample S2 = new Sample();
+		System.out.println(S2.y);// Static var
+
+		System.out.println(p);// local variable
+
+
+
+	}
+	public static void main(String[] args) {
+		Sample S1 = new Sample();//creating object 
+		y = 30 + S1.x; // static  variable y 
+		System.out.println(S1.x);// instance var 
+		System.out.println(S1.y);// static var
+		System.out.println(y);// static var
+
+
+
+	}
 }
